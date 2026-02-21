@@ -44,7 +44,7 @@ This system provides a set of APIs to enable automated retirement savings throug
 A public Docker image is automatically built and published to GitHub Container Registry (GHCR) upon merges to the `main` branch. 
 You can run it from anywhere without needing the source code:
 ```bash
-docker run -d -p 5477:5477 ghcr.io/<your-github-username>/<your-repo-name>:latest
+docker run -d -p 5477:5477 ghcr.io/ramn1997/blackrock-hackathon:latest
 ```
 *Note: Ensure your GitHub repository's package is set to Public under its settings to allow anonymous pulls.*
 
