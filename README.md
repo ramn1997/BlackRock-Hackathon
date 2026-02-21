@@ -26,7 +26,7 @@ This system provides a set of APIs to enable automated retirement savings throug
    ```
    The API will be available at `http://localhost:5477` (or as configured in `launchSettings.json`).
 
-### Running with Docker
+### Running with Docker (Local Build)
 1. Build the image:
    ```bash
    docker build -t blk-hacking-ind-ram-n .
@@ -39,6 +39,14 @@ This system provides a set of APIs to enable automated retirement savings throug
    ```bash
    docker compose up -d
    ```
+
+### Running the Public Docker Image
+A public Docker image is automatically built and published to GitHub Container Registry (GHCR) upon merges to the `main` branch. 
+You can run it from anywhere without needing the source code:
+```bash
+docker run -d -p 5477:5477 ghcr.io/<your-github-username>/<your-repo-name>:latest
+```
+*Note: Ensure your GitHub repository's package is set to Public under its settings to allow anonymous pulls.*
 
 ## Testing
 To run the unit tests:
