@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/test/">
+    <Project Path="test/RetirementSystem.Tests.csproj" />
+  </Folder>
+  <Project Path="RetirementSystem.API/RetirementSystem.API.csproj" />
+</Solution>
